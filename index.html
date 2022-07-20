@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======== CSS ========= -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>CRUDS</title>
+</head>
+
+<body>
+    <!-- =============================== StART CRUDS ======================================== -->
+    <div class="cruds container" id="cruds">
+
+        <!-- ======================== CRUDS HEAD ======================================= -->
+        <div class="cruds__head" id="cruds-head">
+            <h2>cruds</h2>
+            <p>PRODUCT MANGEMENT SYSTEM</p>
+        </div>
+
+        <!-- ======================== CRUDS BODY ======================================= -->
+        <div class="cruds__body" id="cruds-body">
+            <input type="text" placeholder="title" id="title">
+
+            <div class="cruds__body-price">
+                <input type="number" id="price" placeholder="price">
+                <input type="number" id="taxes" placeholder="taxes">
+                <input type="number" id="ads" placeholder="ads">
+                <input type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button class="button" id="create">Create</button>
+
+        </div>
+
+        <!-- ======================== CRUDS OUTPUT ======================================= -->
+        <div class="cruds__output" id="cruds-output">
+
+            <div class="cruds__search">
+                <input type="text" placeholder="search" id="searchInput">
+
+                <div class="cruds__search-btns">
+                    <button class="button" id="search-title">Search by title</button>
+                    <button class="button" id="search-category">Search by category</button>
+                </div>
+            </div>
+
+            <!-- ========= delete all =============  -->
+            <div id="delete-all"></div>
+
+            <table class="cruds__output-table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <!-- ========== JS ============ -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

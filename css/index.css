@@ -1,0 +1,177 @@
+/* ======================== VARIABLES ============================== */
+
+:root {
+    /* colors LIGHT */
+    --btn-color: #183059;
+    --total-s: #720910;
+    --back-color: #310C0F;
+    --text-color: #F6F4F3;
+    --input: #21080A;
+}
+
+
+/* ======================== THEMES ============================== */
+
+:root {
+    /* colors DARK */
+    --btn-d-color: ;
+    --total-d-s: ;
+    --total-d-a: ;
+    --back-d-color: ;
+    --text-d-color: ;
+}
+
+
+/* ======================== BASE ============================== */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui;
+    background-color: var(--back-color);
+    color: var(--text-color);
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 4px;
+    margin: 4px 0;
+    background-color: var(--input);
+    border-radius: 4px;
+    color: var(--text-color);
+}
+
+input:focus {
+    background-color: #000;
+    transform: scale(1.029);
+}
+
+th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+
+/* ======================== LAYOUT ============================== */
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* ======================== MODULATILY ============================== */
+
+
+/* BUTTON */
+
+.button {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: var(--btn-color);
+    cursor: pointer;
+    border-radius: 2.25rem;
+    color: var(--text-color);
+    font-size: 15px;
+    opacity: .7;
+    transition: .3s;
+}
+
+.button:hover {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: .75px;
+}
+
+.button-red {
+    background-color: hsl(10, 75%, 34%);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px;
+    width: 85%;
+    margin: auto;
+}
+
+.button-delete {
+    margin: 10px 0;
+}
+
+
+/* ======================== SECTIONS START ============================== */
+
+
+/* ======================== HEAD ============================== */
+
+.cruds__head {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+/* ======================== BODY ============================== */
+
+.cruds__body-price input {
+    width: 20%;
+}
+
+#total {
+    background-color: var(--total-s);
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+
+#total::before {
+    content: 'Total: ';
+}
+
+
+/* ======================== OUTPUT ============================== */
+
+.cruds__search>input {
+    margin: 10px 0;
+    transition: transform .3s;
+}
+
+.cruds__search>input::placeholder {
+    transition: color .3s;
+}
+
+.cruds__search>input:focus::placeholder {
+    color: transparent;
+}
+
+.cruds__search-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cruds__search-btns button {
+    width: 45%;
+}
+
+.cruds__output-table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+/* ======================== MEDIA QUERIES ============================== */
